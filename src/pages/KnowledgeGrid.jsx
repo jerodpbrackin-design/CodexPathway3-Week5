@@ -8,26 +8,28 @@ const KnowledgeGrid = () => {
   ];
 
   return (
-    /* Step 1: Main Container & Responsive Grid */
-    /* Mobile: grid-cols-1 (stack) | Large screens (md): grid-cols-5 (horizontal row) */
     <div className="min-h-screen bg-gray-50 p-10">
-      <h1 className="text-3xl font-black text-center mb-10 text-slate-800">Tailwind Knowledge Grid</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-        {categories.map((item, index) => (
-          /* Step 2 & 3: The Knowledge Cards with Hierarchy, Spacing, and Definition */
-          <div 
-            key={index} 
-            className={`bg-white p-6 rounded-xl shadow-md border-t-4 ${item.color} flex flex-col hover:shadow-xl transition-shadow`}
-          >
-            {/* Visual Hierarchy: Title and Description */}
-            <h2 className="text-xl font-bold mb-3 text-slate-900">{item.title}</h2>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              {item.desc}
-            </p>
-          </div>
-        ))}
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-3xl font-black text-center mb-10 text-slate-800">
+          Tailwind Knowledge Grid
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-18 m-10 pt-7">
+          {categories.map((item, index) => (
+            <div
+              key={index}
+              className={`bg-white p-6 rounded-xl shadow-md border-t-4 ${item.color} flex flex-col hover:shadow-xl transition-shadow`}
+            >
+              <h2 className="text-xl font-bold mb-3 text-slate-900">{item.title}</h2>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
+
     </div>
   );
 };
