@@ -23,7 +23,7 @@ function Features() {
   ];
 
   return (
-    <section className="flex flex-wrap justify-center py-16 px-16 gap-8">
+    <section className="flex flex-wrap justify-center">
       {features.map((f, i) => (
         <ProductCard key={i} title={f.title} desc={f.desc} price={f.price} img_url={f.img_url} />
       ))}
