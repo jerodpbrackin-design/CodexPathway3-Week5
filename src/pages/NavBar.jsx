@@ -27,10 +27,10 @@ function Navbar() {
           Testimonials
         </Link>
         <Link
-          to="./knowledge-grid"
+          to="./knowledge-cards"
           className="hover:text-indigo-400 transition-colors"
         >
-          Knowledge
+          Knowledge Cards
         </Link>
         <Link to="./login" className="hover:text-indigo-400 transition-colors">
           Login

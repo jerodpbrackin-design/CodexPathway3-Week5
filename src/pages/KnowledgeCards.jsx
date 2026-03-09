@@ -1,4 +1,4 @@
-const KnowledgeGrid = () => {
+const KnowledgeCards = () => {
   const categories = [
     { title: "Typography", desc: "Utilities for font size, weight, and letter spacing (e.g., text-xl, font-bold).", color: "border-blue-500" },
     { title: "Flexbox", desc: "Control the layout, alignment, and sizing of grid columns and flex items.", color: "border-purple-500" },
@@ -34,4 +34,4 @@ const KnowledgeGrid = () => {
   );
 };
 
-export default KnowledgeGrid;
+export default KnowledgeCards;
