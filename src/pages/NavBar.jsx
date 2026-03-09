@@ -16,18 +16,6 @@ function Navbar() {
             Features
           </Link>
           <Link
-            to="./pricing"
-            className="hover:text-indigo-400 transition-colors"
-          >
-            Pricing
-          </Link>
-          <Link
-            to="./testimonials"
-            className="hover:text-indigo-400 transition-colors"
-          >
-            Testimonials
-          </Link>
-          <Link
             to="./knowledge-cards"
             className="hover:text-indigo-400 transition-colors"
           >
