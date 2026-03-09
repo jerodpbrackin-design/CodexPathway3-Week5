@@ -15,7 +15,7 @@ const KnowledgeCards = () => {
           Tailwind Knowledge Grid
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-18 m-10 pt-7">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-7 ">
           {categories.map((item, index) => (
             <div
               key={index}
